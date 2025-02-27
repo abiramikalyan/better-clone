@@ -1,0 +1,88 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  .logo a:hover{
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    
+  }
+  
+  .nav ul li a {
+    font-size: 1rem;
+    color: white;
+    padding: 25px;
+  }
+  
+  .nav ul li a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+
+  .nav ul li a::before{
+    
+ 
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+  opacity: 0%;
+  width: 0.5rem;
+  height: 0.2rem;
+  position: absolute;
+  transform: translateX(-1.5rem);
+  transition: all 0.3s ease;
+  bottom: -0.6rem;
+  content: " ";
+  }
+
+  .nav ul li a:hover::before{
+    transform: translateX(0);
+  width: 10%;
+  opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  .nav ul li a{
+    animation: all 5s forwards;
+  }
+  @keyframes all {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+  }
+  .logo a{
+    animation: a 5s forwards;
+  }
+  @keyframes a {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+  }
