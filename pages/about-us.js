@@ -19,7 +19,7 @@ export default function AboutUs() {
           you get the best deal possible.
         </p>
         <p>
-          Whether you're a first-time homebuyer or looking to refinance, we're here to guide you every step of the way.
+          Whether you are a first time homebuyer or looking to refinance, we are here to guide you every step of the way.
           Let us help you make your dream of homeownership a reality.
         </p>
       </main>
